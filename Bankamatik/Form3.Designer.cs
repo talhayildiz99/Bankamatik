@@ -107,6 +107,7 @@
             // 
             // MskHesapNo
             // 
+            this.MskHesapNo.Enabled = false;
             this.MskHesapNo.Location = new System.Drawing.Point(222, 233);
             this.MskHesapNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MskHesapNo.Mask = "000000";
@@ -139,6 +140,7 @@
             this.BtnKayitOl.TabIndex = 14;
             this.BtnKayitOl.Text = "Kayıt Ol";
             this.BtnKayitOl.UseVisualStyleBackColor = false;
+            this.BtnKayitOl.Click += new System.EventHandler(this.BtnKayitOl_Click);
             // 
             // MskTelefon
             // 
@@ -147,7 +149,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(162, 30);
-            this.MskTelefon.TabIndex = 15;
+            this.MskTelefon.TabIndex = 4;
             // 
             // MskTc
             // 
@@ -156,7 +158,7 @@
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(162, 30);
-            this.MskTc.TabIndex = 16;
+            this.MskTc.TabIndex = 3;
             this.MskTc.ValidatingType = typeof(int);
             // 
             // BtnRastgele
@@ -169,6 +171,7 @@
             this.BtnRastgele.TabIndex = 17;
             this.BtnRastgele.Text = "...";
             this.BtnRastgele.UseVisualStyleBackColor = false;
+            this.BtnRastgele.Click += new System.EventHandler(this.BtnRastgele_Click);
             // 
             // Form3
             // 
@@ -192,7 +195,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayıt Ol";

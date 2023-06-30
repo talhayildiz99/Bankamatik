@@ -56,6 +56,7 @@
             this.BtnGiris.TabIndex = 8;
             this.BtnGiris.Text = "Giriş Yap";
             this.BtnGiris.UseVisualStyleBackColor = false;
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
             // label1
             // 
@@ -96,6 +97,7 @@
             this.LnkKayitOl.TabIndex = 10;
             this.LnkKayitOl.TabStop = true;
             this.LnkKayitOl.Text = "Kayıt Ol";
+            this.LnkKayitOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkKayitOl_LinkClicked);
             // 
             // Form1
             // 
@@ -111,7 +113,7 @@
             this.Controls.Add(this.MskHesapNo);
             this.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Paneli";
